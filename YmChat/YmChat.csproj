@@ -31,15 +31,15 @@
 
 		<!--TODO: Fill these in-->
 		<PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>
-		<PackageProjectUrl>LINK TO PROJECT</PackageProjectUrl>
-		<RepositoryUrl>LINK TO PROJECT</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/PurushYM/ymchat-xamarin</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/PurushYM/ymchat-xamarin</RepositoryUrl>
 		<PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
-		<PackageIconUrl>ICON URL</PackageIconUrl>
+		<PackageIconUrl>https://yellow.ai/images/Logo.svg</PackageIconUrl>
 		<PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, YmChat</PackageTags>
 
 		<Title>YmChat Plugin for Xamarin and Windows</Title>
 		<Summary>Summary of nuget</Summary>
-		<Description>Plugin Description</Description>
+		<Description>>YmChat Plugin for Xamarin and Windows</Description>
 
 
 		<Owners>Yellow.ai</Owners>
@@ -91,6 +91,16 @@
 			<HintPath>sdk\NativeLibrary.dll</HintPath>
 		</Reference>
 	</ItemGroup>
+
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+		<Reference Include="androidsdk">
+			<HintPath>sdk\androidsdk.dll</HintPath>
+		</Reference>
+		<Reference Include="NativeLibrary">
+			<HintPath>sdk\NativeLibrary.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
 
 	<!--Additional item groups-->
 	<!--

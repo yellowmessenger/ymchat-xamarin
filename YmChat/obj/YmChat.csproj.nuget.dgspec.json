@@ -1,30 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/YmChat.csproj": {}
+    "C:\\Users\\Purush\\Desktop\\nuget-plugins\\remote-dev\\ymchat-xamarin\\YmChat\\YmChat.csproj": {}
   },
   "projects": {
-    "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/YmChat.csproj": {
+    "C:\\Users\\Purush\\Desktop\\nuget-plugins\\remote-dev\\ymchat-xamarin\\YmChat\\YmChat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/YmChat.csproj",
+        "projectUniqueName": "C:\\Users\\Purush\\Desktop\\nuget-plugins\\remote-dev\\ymchat-xamarin\\YmChat\\YmChat.csproj",
         "projectName": "Plugin.YmChat",
-        "projectPath": "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/YmChat.csproj",
-        "packagesPath": "/Users/purush/.nuget/packages/",
-        "outputPath": "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/",
+        "projectPath": "C:\\Users\\Purush\\Desktop\\nuget-plugins\\remote-dev\\ymchat-xamarin\\YmChat\\YmChat.csproj",
+        "packagesPath": "C:\\Users\\Purush\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Purush\\Desktop\\nuget-plugins\\remote-dev\\ymchat-xamarin\\YmChat\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/purush/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Purush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "MonoAndroid90",
           "Xamarin.iOS10",
           "netstandard1.0",
-          "netstandard2.0"
+          "netstandard2.0",
+          "uap10.0.16299"
         ],
         "sources": {
-          "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +44,10 @@
           },
           "monoandroid90": {
             "targetAlias": "MonoAndroid90",
+            "projectReferences": {}
+          },
+          "uap10.0.16299": {
+            "targetAlias": "uap10.0.16299",
             "projectReferences": {}
           },
           "xamarinios10": {
@@ -61,7 +71,7 @@
               "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
@@ -83,15 +93,19 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         },
         "monoandroid90": {
           "targetAlias": "MonoAndroid90",
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        },
+        "uap10.0.16299": {
+          "targetAlias": "uap10.0.16299",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         },
         "xamarinios10": {
           "targetAlias": "Xamarin.iOS10",
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
