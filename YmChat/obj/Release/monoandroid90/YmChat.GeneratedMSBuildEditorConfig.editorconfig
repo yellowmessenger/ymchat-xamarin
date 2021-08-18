@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Plugin.YmChat
+build_property.ProjectDir = /Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/

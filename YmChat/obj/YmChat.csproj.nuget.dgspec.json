@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/YmChat.csproj": {}
+  },
+  "projects": {
+    "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/YmChat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/YmChat.csproj",
+        "projectName": "Plugin.YmChat",
+        "projectPath": "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/YmChat.csproj",
+        "packagesPath": "/Users/purush/.nuget/packages/",
+        "outputPath": "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/purush/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "MonoAndroid90",
+          "Xamarin.iOS10",
+          "netstandard1.0",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.0": {
+            "targetAlias": "netstandard1.0",
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          },
+          "monoandroid90": {
+            "targetAlias": "MonoAndroid90",
+            "projectReferences": {}
+          },
+          "xamarinios10": {
+            "targetAlias": "Xamarin.iOS10",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.0": {
+          "targetAlias": "netstandard1.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        },
+        "monoandroid90": {
+          "targetAlias": "MonoAndroid90",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        },
+        "xamarinios10": {
+          "targetAlias": "Xamarin.iOS10",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

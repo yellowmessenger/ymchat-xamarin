@@ -1,0 +1,12 @@
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/netstandard1.0/Plugin.YmChat.deps.json
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/netstandard1.0/Plugin.YmChat.dll
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/netstandard1.0/Plugin.YmChat.pdb
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/netstandard1.0/Plugin.YmChat.xml
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release/netstandard1.0/YmChat.GeneratedMSBuildEditorConfig.editorconfig
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release/netstandard1.0/YmChat.AssemblyInfoInputs.cache
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release/netstandard1.0/YmChat.AssemblyInfo.cs
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release/netstandard1.0/YmChat.csproj.CoreCompileInputs.cache
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release/netstandard1.0/Plugin.YmChat.dll
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release/netstandard1.0/Plugin.YmChat.xml
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release/netstandard1.0/Plugin.YmChat.pdb
+/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Release/netstandard1.0/YmChat.csproj.AssemblyReference.cache
