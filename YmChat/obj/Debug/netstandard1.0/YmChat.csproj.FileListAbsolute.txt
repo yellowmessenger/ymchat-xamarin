@@ -17,3 +17,15 @@ C:/Users/Purush/Desktop/nuget-plugins/dev/YmChat/YmChat/obj/Debug/netstandard1.0
 /Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Debug/netstandard1.0/YmChat.csproj.CoreCompileInputs.cache
 /Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Debug/netstandard1.0/Plugin.YmChat.dll
 /Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/obj/Debug/netstandard1.0/Plugin.YmChat.pdb
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\bin\Debug\netstandard1.0\Plugin.YmChat.deps.json
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\bin\Debug\netstandard1.0\Plugin.YmChat.dll
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\bin\Debug\netstandard1.0\Plugin.YmChat.pdb
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\bin\Debug\netstandard1.0\androidsdk.dll
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\bin\Debug\netstandard1.0\NativeLibrary.dll
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\obj\Debug\netstandard1.0\YmChat.csproj.AssemblyReference.cache
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\obj\Debug\netstandard1.0\YmChat.AssemblyInfoInputs.cache
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\obj\Debug\netstandard1.0\YmChat.AssemblyInfo.cs
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\obj\Debug\netstandard1.0\YmChat.csproj.CoreCompileInputs.cache
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\obj\Debug\netstandard1.0\YmChat.csproj.CopyComplete
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\obj\Debug\netstandard1.0\Plugin.YmChat.dll
+C:\Users\Purush\Desktop\nuget-plugins\remote-dev\ymchat-xamarin\YmChat\obj\Debug\netstandard1.0\Plugin.YmChat.pdb

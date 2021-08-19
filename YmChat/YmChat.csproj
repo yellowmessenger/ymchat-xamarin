@@ -1,4 +1,4 @@
-<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
 
 	<PropertyGroup>
 		<!--Work around so the conditions work below-->
@@ -39,7 +39,7 @@
 
 		<Title>YmChat Plugin for Xamarin and Windows</Title>
 		<Summary>Summary of nuget</Summary>
-		<Description>>YmChat Plugin for Xamarin and Windows</Description>
+		<Description>&gt;YmChat Plugin for Xamarin and Windows</Description>
 
 
 		<Owners>Yellow.ai</Owners>
@@ -79,26 +79,26 @@
 
 	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
 		<Compile Include="**\*.android.cs" />
-		<Reference Include="androidsdk">
-			<HintPath>sdk\androidsdk.dll</HintPath>
-		</Reference>
 	</ItemGroup>
 
 	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
 		<Compile Include="**\*.apple.cs" />
 
-		<Reference Include="NativeLibrary">
-			<HintPath>sdk\NativeLibrary.dll</HintPath>
-		</Reference>
 	</ItemGroup>
 
 	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
 		<Reference Include="androidsdk">
 			<HintPath>sdk\androidsdk.dll</HintPath>
 		</Reference>
-		<Reference Include="NativeLibrary">
-			<HintPath>sdk\NativeLibrary.dll</HintPath>
-		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="androidsdk">
+	    <HintPath>sdk\androidsdk.dll</HintPath>
+	  </Reference>
+	  <Reference Include="NativeLibrary">
+	    <HintPath>sdk\NativeLibrary.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 
 
