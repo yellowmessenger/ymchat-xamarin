@@ -11,7 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "androidsdk": "1.0.0.0",
-          "NativeLibrary": "1.0.7867.28313"
+          "NativeLibrary": "1.0.7909.18030"
         },
         "runtime": {
           "Plugin.YmChat.dll": {}
@@ -31,11 +31,11 @@
           }
         }
       },
-      "NativeLibrary/1.0.7867.28313": {
+      "NativeLibrary/1.0.7909.18030": {
         "runtime": {
           "NativeLibrary.dll": {
-            "assemblyVersion": "1.0.7867.28313",
-            "fileVersion": "1.0.7867.28313"
+            "assemblyVersion": "1.0.7909.18030",
+            "fileVersion": "1.0.7909.18030"
           }
         }
       }
@@ -66,7 +66,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "NativeLibrary/1.0.7867.28313": {
+    "NativeLibrary/1.0.7909.18030": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

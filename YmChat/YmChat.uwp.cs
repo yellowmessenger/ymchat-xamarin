@@ -7,7 +7,7 @@ namespace Plugin.YmChat
     /// <summary>
     /// Interface for YmChat
     /// </summary>
-    public class YmChatImplementation : IYmChat
+    public class YmChat : IYmChat
     {
     }
 }

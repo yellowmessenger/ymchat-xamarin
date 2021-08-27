@@ -5,11 +5,13 @@
     <version>1.0.0</version>
     <title>YmChat Plugin for Xamarin and Windows</title>
     <authors>Purushottam</authors>
-    <description>Plugin Description</description>
+    <projectUrl>https://github.com/PurushYM/ymchat-xamarin</projectUrl>
+    <iconUrl>https://yellow.ai/images/Logo.svg</iconUrl>
+    <description>&gt;YmChat Plugin for Xamarin and Windows</description>
     <releaseNotes>RELEASE NOTES</releaseNotes>
     <copyright>Copyright 2019</copyright>
     <tags>xamarin, windows, ios, android, xamarin.forms, plugin, YmChat</tags>
-    <repository url="LINK TO PROJECT" />
+    <repository url="https://github.com/PurushYM/ymchat-xamarin" />
     <dependencies>
       <group targetFramework=".NETStandard1.0">
         <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
@@ -23,13 +25,13 @@
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/netstandard1.0/Plugin.YmChat.dll" target="lib/netstandard1.0/Plugin.YmChat.dll" />
-    <file src="/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/netstandard1.0/Plugin.YmChat.xml" target="lib/netstandard1.0/Plugin.YmChat.xml" />
-    <file src="/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/netstandard2.0/Plugin.YmChat.dll" target="lib/netstandard2.0/Plugin.YmChat.dll" />
-    <file src="/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/netstandard2.0/Plugin.YmChat.xml" target="lib/netstandard2.0/Plugin.YmChat.xml" />
-    <file src="/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/xamarin.ios10/Plugin.YmChat.dll" target="lib/xamarinios10/Plugin.YmChat.dll" />
-    <file src="/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/xamarin.ios10/Plugin.YmChat.xml" target="lib/xamarinios10/Plugin.YmChat.xml" />
-    <file src="/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/monoandroid90/Plugin.YmChat.dll" target="lib/monoandroid90/Plugin.YmChat.dll" />
-    <file src="/Users/purush/development/ym_mobile/plugins_bridges_sdks/YmChat/YmChat/bin/Release/monoandroid90/Plugin.YmChat.xml" target="lib/monoandroid90/Plugin.YmChat.xml" />
+    <file src="/Users/purush/development/ym_mobile/Plugins_bridges/xamarin/YmChat/YmChat/bin/Release/netstandard1.0/Plugin.YmChat.dll" target="lib/netstandard1.0/Plugin.YmChat.dll" />
+    <file src="/Users/purush/development/ym_mobile/Plugins_bridges/xamarin/YmChat/YmChat/bin/Release/netstandard1.0/Plugin.YmChat.xml" target="lib/netstandard1.0/Plugin.YmChat.xml" />
+    <file src="/Users/purush/development/ym_mobile/Plugins_bridges/xamarin/YmChat/YmChat/bin/Release/netstandard2.0/Plugin.YmChat.dll" target="lib/netstandard2.0/Plugin.YmChat.dll" />
+    <file src="/Users/purush/development/ym_mobile/Plugins_bridges/xamarin/YmChat/YmChat/bin/Release/netstandard2.0/Plugin.YmChat.xml" target="lib/netstandard2.0/Plugin.YmChat.xml" />
+    <file src="/Users/purush/development/ym_mobile/Plugins_bridges/xamarin/YmChat/YmChat/bin/Release/xamarin.ios10/Plugin.YmChat.dll" target="lib/xamarinios10/Plugin.YmChat.dll" />
+    <file src="/Users/purush/development/ym_mobile/Plugins_bridges/xamarin/YmChat/YmChat/bin/Release/xamarin.ios10/Plugin.YmChat.xml" target="lib/xamarinios10/Plugin.YmChat.xml" />
+    <file src="/Users/purush/development/ym_mobile/Plugins_bridges/xamarin/YmChat/YmChat/bin/Release/monoandroid90/Plugin.YmChat.dll" target="lib/monoandroid90/Plugin.YmChat.dll" />
+    <file src="/Users/purush/development/ym_mobile/Plugins_bridges/xamarin/YmChat/YmChat/bin/Release/monoandroid90/Plugin.YmChat.xml" target="lib/monoandroid90/Plugin.YmChat.xml" />
   </files>
 </package>

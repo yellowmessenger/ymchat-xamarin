@@ -1,14 +1,23 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="YmChat/IYmChat.shared.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="YmChat/YmChat.android.cs">
     <Files>
-      <File FileName="YmChat/IYmChat.shared.cs" Line="1" Column="1" />
+      <File FileName="YmChat/IYmChat.shared.cs" Line="15" Column="44" />
+      <File FileName="YmChat/YmChat.csproj" />
+      <File FileName="YmChat/YmChat.android.cs" Line="22" Column="10" />
+      <File FileName="YmChat/YmChat.apple.cs" />
+      <File FileName="YmChat/YmChat.uwp.cs" />
+      <File FileName="YmChat/YmChatEventListener.apple.cs" />
+      <File FileName="YmChat/YmChatEventListener.android.cs" />
+      <File FileName="YmChat/CrossYmChat.shared.cs" />
+      <File FileName="YmChat/mono_crash.11a67480d0.0.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="YmChat" expanded="True">
             <Node name="YmChat" expanded="True">
-              <Node name="IYmChat.shared.cs" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="YmChat.android.cs" selected="True" />
             </Node>
           </Node>
         </State>

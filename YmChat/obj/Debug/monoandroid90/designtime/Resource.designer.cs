@@ -189,28 +189,31 @@ namespace Plugin.YmChat
 		{
 			
 			// aapt resource value: 0x7F060000
-			public static int title_activity_test = 2131099648;
+			public static int application_id_for_provider = 2131099648;
 			
 			// aapt resource value: 0x7F060001
-			public static int ym_app_name = 2131099649;
+			public static int title_activity_test = 2131099649;
 			
 			// aapt resource value: 0x7F060002
-			public static int ym_chatbot_base_url = 2131099650;
+			public static int ym_app_name = 2131099650;
 			
 			// aapt resource value: 0x7F060003
-			public static int ym_chatbot_base_url_github = 2131099651;
+			public static int ym_chatbot_base_url = 2131099651;
 			
 			// aapt resource value: 0x7F060004
-			public static int ym_fab_voice_button = 2131099652;
+			public static int ym_chatbot_base_url_github = 2131099652;
 			
 			// aapt resource value: 0x7F060005
-			public static int ym_file_provider = 2131099653;
+			public static int ym_fab_voice_button = 2131099653;
 			
 			// aapt resource value: 0x7F060006
-			public static int ym_msg_listening = 2131099654;
+			public static int ym_file_provider = 2131099654;
 			
 			// aapt resource value: 0x7F060007
-			public static int ym_msg_start_speaking = 2131099655;
+			public static int ym_msg_listening = 2131099655;
+			
+			// aapt resource value: 0x7F060008
+			public static int ym_msg_start_speaking = 2131099656;
 			
 			static String()
 			{

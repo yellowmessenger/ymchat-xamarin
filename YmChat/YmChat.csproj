@@ -86,22 +86,6 @@
 
 	</ItemGroup>
 
-	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
-		<Reference Include="androidsdk">
-			<HintPath>sdk\androidsdk.dll</HintPath>
-		</Reference>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Reference Include="androidsdk">
-	    <HintPath>sdk\androidsdk.dll</HintPath>
-	  </Reference>
-	  <Reference Include="NativeLibrary">
-	    <HintPath>sdk\NativeLibrary.dll</HintPath>
-	  </Reference>
-	</ItemGroup>
-
-
 	<!--Additional item groups-->
 	<!--
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.TVOS')) ">
@@ -132,4 +116,12 @@
     <Compile Include="**\*.dotnet.cs" />
   </ItemGroup>
   -->
+	<ItemGroup>
+	  <Reference Include="NativeLibrary">
+	    <HintPath>..\..\YMChatDemo_try1\YMChat-Binding-IOS\YMChat-Binding\bin\Release\NativeLibrary.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="NativeLibrary" />
+	</ItemGroup>
 </Project>
