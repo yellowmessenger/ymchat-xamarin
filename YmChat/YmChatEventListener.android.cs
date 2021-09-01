@@ -7,7 +7,7 @@ using Java.Interop;
 using Java.Util;
 
 
-namespace Plugin.YmChat
+namespace YmChat
 {
     class YmChatEventListener : Java.Lang.Object, IBotEventListener, IBotCloseEventListener
     {

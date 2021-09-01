@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Plugin.YmChat
+namespace YmChat
 {
     public interface IYmChat
     {

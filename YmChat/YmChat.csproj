@@ -1,4 +1,4 @@
-<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
 
 	<PropertyGroup>
 		<!--Work around so the conditions work below-->
@@ -9,9 +9,9 @@
     netstandard1.0;netstandard2.0;MonoAndroid90;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
     For UWP update the version number with a version number you have installed.
     -->
-		<AssemblyName>Plugin.YmChat</AssemblyName>
-		<RootNamespace>Plugin.YmChat</RootNamespace>
-		<PackageId>Plugin.YmChat</PackageId>
+		<AssemblyName>YmChat</AssemblyName>
+		<RootNamespace>YmChat</RootNamespace>
+		<PackageId>YmChat</PackageId>
 
 		<Product>$(AssemblyName) ($(TargetFramework))</Product>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -31,20 +31,19 @@
 
 		<!--TODO: Fill these in-->
 		<PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>
-		<PackageProjectUrl>LINK TO PROJECT</PackageProjectUrl>
-		<RepositoryUrl>LINK TO PROJECT</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/PurushYM/ymchat-xamarin</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/PurushYM/ymchat-xamarin</RepositoryUrl>
 		<PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
-		<PackageIconUrl>ICON URL</PackageIconUrl>
+		<PackageIconUrl>https://yellow.ai/images/Logo.svg</PackageIconUrl>
 		<PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, YmChat</PackageTags>
 
 		<Title>YmChat Plugin for Xamarin and Windows</Title>
 		<Summary>Summary of nuget</Summary>
-		<Description>Plugin Description</Description>
+		<Description>&gt;YmChat Plugin for Xamarin and Windows</Description>
 
 
 		<Owners>Yellow.ai</Owners>
 		<Authors>Purushottam</Authors>
-		<Copyright>Copyright 2019</Copyright>
 
 		<!--When built in 2019 will remove extra references on pack-->
 		<DisableExtraReferences>true</DisableExtraReferences>
@@ -79,17 +78,11 @@
 
 	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
 		<Compile Include="**\*.android.cs" />
-		<Reference Include="androidsdk">
-			<HintPath>sdk\androidsdk.dll</HintPath>
-		</Reference>
 	</ItemGroup>
 
 	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
 		<Compile Include="**\*.apple.cs" />
 
-		<Reference Include="NativeLibrary">
-			<HintPath>sdk\NativeLibrary.dll</HintPath>
-		</Reference>
 	</ItemGroup>
 
 	<!--Additional item groups-->
@@ -122,4 +115,16 @@
     <Compile Include="**\*.dotnet.cs" />
   </ItemGroup>
   -->
+	<ItemGroup>
+	  <Reference Include="NativeLibrary">
+	    <HintPath>..\..\YMChatDemo_try1\YMChat-Binding-IOS\YMChat-Binding\bin\Release\NativeLibrary.dll</HintPath>
+	  </Reference>
+	  <Reference Include="androidsdk">
+	    <HintPath>..\..\YMChatDemo_try1\YMChat-Binding-Android\androidsdk\bin\Release\androidsdk.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="NativeLibrary" />
+	  <None Remove="androidsdk" />
+	</ItemGroup>
 </Project>

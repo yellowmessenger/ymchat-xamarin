@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Plugin.YmChat
+namespace YmChat
 {
     /// <summary>
     /// Cross YmChat

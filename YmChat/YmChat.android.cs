@@ -2,23 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 using Android.App;
+using Android.Content;
 using Com.Yellowmessenger.Ymchat;
 
-namespace Plugin.YmChat
+namespace YmChat
 {
     public class YmChatImplementation : IYmChat
     {
-        YMChat ymchat = YMChat.Instance;
-        Activity _activity;
+        private YMChat ymchat = YMChat.Instance;
+        private Context context = Android.App.Application.Context;
 
         public YmChatImplementation()
         {
-           
-        }
 
-        public YmChatImplementation(Activity activity)
-        {
-            _activity = activity;
         }
         public void setBotId(String botId)
         {
@@ -26,7 +22,7 @@ namespace Plugin.YmChat
         }
         public void startChatBot()
         {
-            ymchat.StartChatbot(_activity);
+            ymchat.StartChatbot(context);
         }
 
         public void closeChatBot()
@@ -35,38 +31,38 @@ namespace Plugin.YmChat
             ymchat.CloseBot();
         }
 
-        public void setCustomURL(String Url)
+        public void setCustomURL(String customUrl)
         {
-            ymchat.Config.CustomBaseUrl = Url;
+            ymchat.Config.CustomBaseUrl = customUrl;
 
         }
-        public void setAuthenticationToken(String AuthToken)
+        public void setAuthenticationToken(String authToken)
         {
-            ymchat.Config.YmAuthenticationToken = AuthToken;
+            ymchat.Config.YmAuthenticationToken = authToken;
         }
-        public void setDeviceToken(String DivToken)
+        public void setDeviceToken(String deviceToken)
         {
-            ymchat.Config.DeviceToken = DivToken;
-        }
-
-        public void setEnableSpeech(Boolean val)
-        {
-
-            ymchat.Config.EnableSpeech = val;
+            ymchat.Config.DeviceToken = deviceToken;
         }
 
-        public void setEnableHistory(Boolean val)
+        public void setEnableSpeech(Boolean enableSpeech)
         {
-            ymchat.Config.EnableHistory = val;
+
+            ymchat.Config.EnableSpeech = enableSpeech;
         }
 
-        public void showCloseButton(Boolean val)
+        public void setEnableHistory(Boolean enableHistory)
         {
-            ymchat.Config.ShowCloseButton = val;
+            ymchat.Config.EnableHistory = enableHistory;
+        }
+
+        public void showCloseButton(Boolean closeButton)
+        {
+            ymchat.Config.ShowCloseButton = closeButton;
 
         }
 
-        public void onEventFromBot(Action<Dictionary<String, Object>> callback)
+        public void onEventFromBot(Action<Dictionary<String, Object>> eventCallback)
         {
             YmChatEventListener eventListener = new YmChatEventListener();
             eventListener.setEventCallback(
@@ -75,7 +71,7 @@ namespace Plugin.YmChat
                        Dictionary<String, Object> myEventData = new Dictionary<String, Object>();
                        myEventData.Add("code", eventData.Code);
                        myEventData.Add("data", eventData.Data);
-                       callback(myEventData);
+                       eventCallback(myEventData);
                    });
 
             ymchat.OnEventFromBot(eventListener);
@@ -87,12 +83,12 @@ namespace Plugin.YmChat
             ymchat.Config.Payload = (System.Collections.IDictionary)(payload);
         }
 
-        public void onBotClose(Action callback)
+        public void onBotClose(Action botCloseCallback)
         {
             YmChatEventListener eventListener = new YmChatEventListener();
             eventListener.setCloseBotEventCallBack(() =>
             {
-                callback();
+                botCloseCallback();
             });
             ymchat.OnBotClose(eventListener);
         }

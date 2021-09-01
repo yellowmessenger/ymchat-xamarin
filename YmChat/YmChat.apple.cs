@@ -4,17 +4,14 @@ using System.Text;
 using Foundation;
 using Binding;
 
-namespace Plugin.YmChat
+namespace YmChat
 {
-    /// <summary>
-    /// Interface for YmChat
-    /// </summary>
     public class YmChatImplementation : IYmChat
     {
-        YmChatEventListener eventListener = new YmChatEventListener();
+        private YmChatEventListener eventListener;
         public YmChatImplementation()
         {
-            //Constructor 
+            this.eventListener = new YmChatEventListener();
         }
 
         public void setBotId(String botId)
@@ -76,8 +73,6 @@ namespace Plugin.YmChat
 
             }
             var _payload = new NSDictionary<NSString, NSObject>(keys, objects);
-            Console.WriteLine("_payload");
-            Console.WriteLine(_payload);
 
             YMChat.Shared.Config.Payload = _payload;
 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>YmChat</id>
+    <version>1.1.1</version>
+    <title>YmChat Plugin for Xamarin</title>
+    <authors>Purushottam</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/PurushYM/ymchat-xamarin</projectUrl>
+    <!-- <iconUrl>https://yellow.ai/images/Logo.svg</iconUrl> -->
+    <description>nuget Package for ymchat</description>
+    <releaseNotes>Added androidsdk.xml file</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>xamarin, windows, ios, android, xamarin.forms, plugin, YmChat</tags>
+    <repository url="https://github.com/PurushYM/ymchat-xamarin" />
+    <dependencies>
+      <group targetFramework=".NETStandard1.0">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="GoogleGson" version="2.8.6" />
+        <dependency id="Square.OkHttp3" version="4.9.1" />
+        <dependency id="Xamarin.Kotlin.StdLib" version="1.5.21" />
+        <dependency id="Xamarin.AndroidX.Activity" version="1.3.1" />
+        <dependency id="Xamarin.AndroidX.Fragment" version="1.3.6.1" />
+        <dependency id="Xamarin.AndroidX.MultiDex" version="2.0.1.8" />
+        <dependency id="Xamarin.AndroidX.RecyclerView" version="1.2.1.1" />
+      </group>
+      <group targetFramework="Xamarin.iOS1.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="YmChat/bin/Release/netstandard1.0/YmChat.dll" target="lib/netstandard1.0/YmChat.dll" />
+    <file src="YmChat/bin/Release/netstandard1.0/YmChat.xml" target="lib/netstandard1.0/YmChat.xml" />
+
+    <file src="YmChat/bin/Release/netstandard2.0/YmChat.dll" target="lib/netstandard2.0/YmChat.dll" />
+    <file src="YmChat/bin/Release/netstandard2.0/YmChat.xml" target="lib/netstandard2.0/YmChat.xml" />
+
+    <file src="YmChat/bin/Release/xamarin.ios10/YmChat.dll" target="lib/xamarinios10/YmChat.dll" />
+    <file src="YmChat/bin/Release/xamarin.ios10/YmChat.xml" target="lib/xamarinios10/YmChat.xml" />
+    <file src="YmChat/bin/Release/xamarin.ios10/NativeLibrary.dll" target="lib/xamarin.ios10/NativeLibrary.dll" />
+
+    <file src="YmChat/bin/Release/monoandroid90/YmChat.dll" target="lib/monoandroid90/YmChat.dll" />
+    <file src="YmChat/bin/Release/monoandroid90/YmChat.xml" target="lib/monoandroid90/YmChat.xml" />
+    <file src="YmChat/bin/Release/monoandroid90/androidsdk.dll" target="lib/monoandroid90/androidsdk.dll" />
+
+  </files>
+</package>

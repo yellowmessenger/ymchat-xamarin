@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Plugin.YmChat
+namespace YmChat
 {
     /// <summary>
     /// Interface for YmChat

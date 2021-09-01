@@ -4,7 +4,7 @@ using System.Text;
 using Binding;
 using Foundation;
 
-namespace Plugin.YmChat
+namespace YmChat
 {
     class YmChatEventListener: YMChatDelegate
     {
