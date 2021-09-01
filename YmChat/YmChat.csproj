@@ -9,9 +9,9 @@
     netstandard1.0;netstandard2.0;MonoAndroid90;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
     For UWP update the version number with a version number you have installed.
     -->
-		<AssemblyName>Plugin.YmChat</AssemblyName>
-		<RootNamespace>Plugin.YmChat</RootNamespace>
-		<PackageId>Plugin.YmChat</PackageId>
+		<AssemblyName>YmChat</AssemblyName>
+		<RootNamespace>YmChat</RootNamespace>
+		<PackageId>YmChat</PackageId>
 
 		<Product>$(AssemblyName) ($(TargetFramework))</Product>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -44,7 +44,6 @@
 
 		<Owners>Yellow.ai</Owners>
 		<Authors>Purushottam</Authors>
-		<Copyright>Copyright 2019</Copyright>
 
 		<!--When built in 2019 will remove extra references on pack-->
 		<DisableExtraReferences>true</DisableExtraReferences>
@@ -120,8 +119,12 @@
 	  <Reference Include="NativeLibrary">
 	    <HintPath>..\..\YMChatDemo_try1\YMChat-Binding-IOS\YMChat-Binding\bin\Release\NativeLibrary.dll</HintPath>
 	  </Reference>
+	  <Reference Include="androidsdk">
+	    <HintPath>..\..\YMChatDemo_try1\YMChat-Binding-Android\androidsdk\bin\Release\androidsdk.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="NativeLibrary" />
+	  <None Remove="androidsdk" />
 	</ItemGroup>
 </Project>
