@@ -8,7 +8,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/PurushYM/ymchat-xamarin</projectUrl>
-    <!-- <iconUrl>https://yellow.ai/images/Logo.svg</iconUrl> -->
+    <icon>images/ymicon.png</icon>
     <description>nuget Package for ymchat</description>
     <releaseNotes>Added androidsdk.xml file</releaseNotes>
     <copyright>Copyright 2019</copyright>
@@ -35,6 +35,8 @@
     </frameworkAssemblies>
   </metadata>
   <files>
+    <file src="images/ymicon.png" target="images/" />
+
     <file src="YmChat/bin/Release/netstandard1.0/YmChat.dll" target="lib/netstandard1.0/YmChat.dll" />
     <file src="YmChat/bin/Release/netstandard1.0/YmChat.xml" target="lib/netstandard1.0/YmChat.xml" />
 
