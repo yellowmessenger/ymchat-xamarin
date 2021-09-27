@@ -100,5 +100,12 @@ namespace YmChat
                 });
             YMChat.Shared.Delegate = eventListener;
         }
+
+        public void unLinkDeviceToken(string botid, string apiKey, string deviceToken, Action<bool> successCallback, Action<string> failureCallback)
+        {
+            YMChat.Shared.UnlinkDeviceTokenWithBotId(botid, apiKey, deviceToken, () => {
+                successCallBack(true);
+            }, (failureMessage) => { failureCallback(failureMessage); });
+        }
     }
 }
