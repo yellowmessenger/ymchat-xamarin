@@ -4,6 +4,7 @@ using System.Text;
 using Android.App;
 using Android.Content;
 using Com.Yellowmessenger.Ymchat;
+using Com.Yellowmessenger.Ymchat.Models;
 
 namespace YmChat
 {
@@ -91,6 +92,12 @@ namespace YmChat
                 botCloseCallback();
             });
             ymchat.OnBotClose(eventListener);
+        }
+
+        public void unLinkDeviceToken(string botid, string apiKey, string deviceToken, Action<bool> successCallback, Action<string> failureCallback)
+        {
+            YmChatEventListener iYellowCallback = new YmChatEventListener();
+            iYellowCallback.setIYellowCallback(successCallback,failureCallback);
         }
     }
 }

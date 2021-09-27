@@ -17,5 +17,6 @@ namespace YmChat
         void setPayLoad(Dictionary<string, object> payload);
         void onEventFromBot(Action<Dictionary<String, Object>> callback);
         void onBotClose(Action callback);
+        void unLinkDeviceToken(String botid, String apiKey, String deviceToken, Action<bool> successCallback, Action<String> failureCallback);
     }
 }

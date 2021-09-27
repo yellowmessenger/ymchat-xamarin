@@ -9,10 +9,14 @@ using Java.Util;
 
 namespace YmChat
 {
-    class YmChatEventListener : Java.Lang.Object, IBotEventListener, IBotCloseEventListener
+    class YmChatEventListener : Java.Lang.Object, IBotEventListener, IBotCloseEventListener, IYellowCallback
     {
         Action<YMBotEventResponse> callback;
         Action closeBotEventCallBack;
+
+        Action<bool> successCallback;
+        Action<String> failureCallback;
+
         public YmChatEventListener()
         {
 
@@ -26,6 +30,12 @@ namespace YmChat
         public void setCloseBotEventCallBack(Action closeBotEventCallBack)
         {
             this.closeBotEventCallBack = closeBotEventCallBack;
+        }
+
+        public void setIYellowCallback(Action<bool> successCallback, Action<String> failureCallback)
+        {
+            this.successCallback = successCallback;
+            this.failureCallback = failureCallback;
         }
 
         public void OnSuccess(YMBotEventResponse eventReponse)
@@ -43,6 +53,16 @@ namespace YmChat
 
                 this.closeBotEventCallBack();
             }
+        }
+
+        public void Failure(string failureMessage)
+        {
+            this.failureCallback(failureMessage);
+        }
+
+        public void Success()
+        {
+            this.successCallback(true);
         }
     }
 }
