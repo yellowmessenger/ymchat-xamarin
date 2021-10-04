@@ -94,10 +94,18 @@ namespace YmChat
             ymchat.OnBotClose(eventListener);
         }
 
-        public void unLinkDeviceToken(string botid, string apiKey, string deviceToken, Action<bool> successCallback, Action<string> failureCallback)
+        public void unLinkDeviceToken(string botId, string apiKey, string deviceToken, Action<bool> successCallback, Action<string> failureCallback)
         {
-            YmChatEventListener iYellowCallback = new YmChatEventListener();
-            iYellowCallback.setIYellowCallback(successCallback,failureCallback);
+           Console.WriteLine("Calling unLink device token");
+            YmChatEventListener unLinkDeviceTokenCallback = new YmChatEventListener();
+            unLinkDeviceTokenCallback.setIYellowCallback((success) => {
+                successCallback(success);
+            }, (failureMessage) =>
+            {
+                failureCallback(failureMessage);
+            });
+
+            ymchat.UnlinkDeviceToken(botId, apiKey, deviceToken, unLinkDeviceTokenCallback);
         }
     }
 }

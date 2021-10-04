@@ -104,7 +104,7 @@ namespace YmChat
         public void unLinkDeviceToken(string botid, string apiKey, string deviceToken, Action<bool> successCallback, Action<string> failureCallback)
         {
             YMChat.Shared.UnlinkDeviceTokenWithBotId(botid, apiKey, deviceToken, () => {
-                successCallBack(true);
+                successCallback(true);
             }, (failureMessage) => { failureCallback(failureMessage); });
         }
     }
