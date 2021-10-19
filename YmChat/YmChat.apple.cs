@@ -51,11 +51,6 @@ namespace YmChat
             YMChat.Shared.Config.EnableSpeech = val;
         }
 
-        public void setEnableHistory(Boolean val)
-        {
-            YMChat.Shared.Config.EnableHistory = val;
-
-        }
         public void showCloseButton(Boolean val)
         {
             YMChat.Shared.Config.ShowCloseButton = val;
@@ -106,6 +101,11 @@ namespace YmChat
             YMChat.Shared.UnlinkDeviceTokenWithBotId(botid, apiKey, deviceToken, () => {
                 successCallback(true);
             }, (failureMessage) => { failureCallback(failureMessage); });
+        }
+
+        public void setVersion(int version)
+        {
+            YMChat.Shared.Config.Version = version;
         }
     }
 }
