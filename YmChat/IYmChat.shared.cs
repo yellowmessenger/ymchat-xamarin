@@ -12,11 +12,11 @@ namespace YmChat
         void setAuthenticationToken(string AuthToken);
         void setDeviceToken(String DivToken);
         void setEnableSpeech(Boolean val);
-        void setEnableHistory(Boolean val);
         void showCloseButton(Boolean val);
         void setPayLoad(Dictionary<string, object> payload);
         void onEventFromBot(Action<Dictionary<String, Object>> callback);
         void onBotClose(Action callback);
         void unLinkDeviceToken(String botid, String apiKey, String deviceToken, Action<bool> successCallback, Action<String> failureCallback);
+        void setVersion(int version);
     }
 }

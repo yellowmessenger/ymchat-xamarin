@@ -120,11 +120,11 @@
 	  <None Remove="androidsdk" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Reference Include="androidsdk">
-	    <HintPath>..\SDK\androidsdk.dll</HintPath>
-	  </Reference>
 	  <Reference Include="NativeLibrary">
-	    <HintPath>..\SDK\NativeLibrary.dll</HintPath>
+	    <HintPath>..\..\SDK\NativeLibrary.dll</HintPath>
+	  </Reference>
+	  <Reference Include="androidsdk">
+	    <HintPath>..\..\SDK\androidsdk.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 </Project>

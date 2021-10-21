@@ -52,11 +52,6 @@ namespace YmChat
             ymchat.Config.EnableSpeech = enableSpeech;
         }
 
-        public void setEnableHistory(Boolean enableHistory)
-        {
-            ymchat.Config.EnableHistory = enableHistory;
-        }
-
         public void showCloseButton(Boolean closeButton)
         {
             ymchat.Config.ShowCloseButton = closeButton;
@@ -106,6 +101,11 @@ namespace YmChat
             });
 
             ymchat.UnlinkDeviceToken(botId, apiKey, deviceToken, unLinkDeviceTokenCallback);
+        }
+
+        public void setVersion(int version)
+        {
+            ymchat.Config.Version = version;
         }
     }
 }
