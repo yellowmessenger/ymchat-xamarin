@@ -107,5 +107,10 @@ namespace YmChat
         {
             YMChat.Shared.Config.Version = version;
         }
+
+        public void setCustomLoaderUrl(string url)
+        {
+            YMChat.Shared.Config.CustomLoaderUrl = url;
+        }
     }
 }

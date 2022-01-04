@@ -35,7 +35,6 @@ namespace YmChat
         public void setCustomURL(String customUrl)
         {
             ymchat.Config.CustomBaseUrl = customUrl;
-
         }
         public void setAuthenticationToken(String authToken)
         {
@@ -106,6 +105,11 @@ namespace YmChat
         public void setVersion(int version)
         {
             ymchat.Config.Version = version;
+        }
+
+        public void setCustomLoaderUrl(string url)
+        {
+            ymchat.Config.CustomLoaderUrl = url;
         }
     }
 }
