@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using Foundation;
 using Binding;
+using UIKit;
 
 namespace YmChat
 {
@@ -107,5 +107,45 @@ namespace YmChat
         {
             YMChat.Shared.Config.Version = version;
         }
+
+        public void setCustomLoaderUrl(string url)
+        {
+            YMChat.Shared.Config.CustomLoaderUrl = url;
+        }
+
+        public void setStatusBarColour(string statusBarColour)
+        {
+            YMChat.Shared.Config.StatusBarColor = UIColor.Clear.FromHexString(statusBarColour);
+        }
+
+        public void setCloseButtonColour(string closeButtonColor)
+        {
+            YMChat.Shared.Config.CloseButtonColor = UIColor.Clear.FromHexString(closeButtonColor);
+        }
     }
+
+    public static class UIColorExtensions
+    {
+        public static UIColor FromHexString(this UIColor color, string hexValue)
+        {
+            var colorString = hexValue.Replace("#", "");
+            float red, green, blue;
+
+            switch (colorString.Length)
+            {
+                case 6: // #RRGGBB
+                    {
+                        red = Convert.ToInt32(colorString.Substring(0, 2), 16) / 255f;
+                        green = Convert.ToInt32(colorString.Substring(2, 2), 16) / 255f;
+                        blue = Convert.ToInt32(colorString.Substring(4, 2), 16) / 255f;
+                        return UIColor.FromRGB(red, green, blue);
+                    }
+
+                default:
+                    throw new ArgumentOutOfRangeException(string.Format("Invalid color value {0}. It should be a hex value of the form #RRGGBB", hexValue));
+
+            }
+        }
+    }
+
 }
