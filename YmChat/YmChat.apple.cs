@@ -113,12 +113,12 @@ namespace YmChat
             YMChat.Shared.Config.CustomLoaderUrl = url;
         }
 
-        public void setStatusBarColour(string statusBarColour)
+        public void setStatusBarColor(string statusBarColor)
         {
-            YMChat.Shared.Config.StatusBarColor = UIColor.Clear.FromHexString(statusBarColour);
+            YMChat.Shared.Config.StatusBarColor = UIColor.Clear.FromHexString(statusBarColor);
         }
 
-        public void setCloseButtonColour(string closeButtonColor)
+        public void setCloseButtonColor(string closeButtonColor)
         {
             YMChat.Shared.Config.CloseButtonColor = UIColor.Clear.FromHexString(closeButtonColor);
         }

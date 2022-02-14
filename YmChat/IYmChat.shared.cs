@@ -19,7 +19,7 @@ namespace YmChat
         void unLinkDeviceToken(String botid, String apiKey, String deviceToken, Action<bool> successCallback, Action<String> failureCallback);
         void setVersion(int version);
         void setCustomLoaderUrl(string url);
-        void setStatusBarColour(string statusBarColour);
-        void setCloseButtonColour(string closeButtonColor);
+        void setStatusBarColor(string statusBarColor);
+        void setCloseButtonColor(string closeButtonColor);
     }
 }
