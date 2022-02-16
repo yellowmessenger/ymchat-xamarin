@@ -111,5 +111,15 @@ namespace YmChat
         {
             ymchat.Config.CustomLoaderUrl = url;
         }
+
+        public void setStatusBarColor(string statusBarColorr)
+        {
+            ymchat.Config.StatusBarColorFromHex = statusBarColorr;
+        }
+
+        public void setCloseButtonColor(string closeButtonColor)
+        {
+            ymchat.Config.CloseButtonColorFromHex = closeButtonColor;
+        }
     }
 }
