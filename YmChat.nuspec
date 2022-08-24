@@ -8,7 +8,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/yellowmessenger/ymchat-xamarin</projectUrl>
     <description>The Nuget Package for integrating yellow.ai chat bot into xamarin forms application</description>
-    <releaseNotes>Added setDisableActionsOnLoad flag, when set to true Input bar will not be shown while bot is loading</releaseNotes>
+    <releaseNotes>Added setDisableActionsOnLoad API, when set to true Input bar will not be shown while bot is loading</releaseNotes>
     <tags>xamarin, ios, android, xamarin.forms, plugin, YmChat, ymchat</tags>
     <repository type="git" url="https://github.com/yellowmessenger/ymchat-xamarin" />
     <icon>images/ymicon.png</icon>
