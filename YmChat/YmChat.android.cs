@@ -121,5 +121,9 @@ namespace YmChat
         {
             ymchat.Config.CloseButtonColorFromHex = closeButtonColor;
         }
+        public void setDisableActionsOnLoad(Boolean shouldDisableActionsOnLoad)
+        {
+            ymchat.Config.DisableActionsOnLoad = shouldDisableActionsOnLoad;
+        }
     }
 }
