@@ -122,6 +122,10 @@ namespace YmChat
         {
             YMChat.Shared.Config.CloseButtonColor = UIColor.Clear.FromHexString(closeButtonColor);
         }
+        public void setDisableActionsOnLoad(Boolean shouldDisableActionsOnLoad)
+        {
+            YMChat.Shared.Config.DisableActionsOnLoad = shouldDisableActionsOnLoad;
+        }
     }
 
     public static class UIColorExtensions
