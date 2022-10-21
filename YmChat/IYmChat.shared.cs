@@ -22,5 +22,6 @@ namespace YmChat
         void setStatusBarColor(string statusBarColor);
         void setCloseButtonColor(string closeButtonColor);
         void setDisableActionsOnLoad(Boolean shouldDisableActionsOnLoad);
+        void useLiteVersion(Boolean shouldUseLiteVersion);
     }
 }
