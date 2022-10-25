@@ -125,5 +125,10 @@ namespace YmChat
         {
             ymchat.Config.DisableActionsOnLoad = shouldDisableActionsOnLoad;
         }
+
+        public void useLiteVersion(bool shouldUseLiteVersion)
+        {
+            ymchat.Config.UseLiteVersion = shouldUseLiteVersion;
+        }
     }
 }

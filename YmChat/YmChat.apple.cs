@@ -126,6 +126,11 @@ namespace YmChat
         {
             YMChat.Shared.Config.DisableActionsOnLoad = shouldDisableActionsOnLoad;
         }
+
+        public void useLiteVersion(bool shouldUseLiteVersion)
+        {
+            YMChat.Shared.Config.UseLiteVersion = shouldUseLiteVersion;
+        }
     }
 
     public static class UIColorExtensions
