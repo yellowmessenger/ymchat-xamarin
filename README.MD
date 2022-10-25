@@ -3,7 +3,7 @@
 ## Documentation
 
 For integration and usage refer documentation
-[https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/xamarin](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/xamarin)
+[https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/xamarin](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/xamarinn)
 
 ## Demo App
 
