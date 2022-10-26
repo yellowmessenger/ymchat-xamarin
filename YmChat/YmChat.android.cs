@@ -5,6 +5,7 @@ using Android.App;
 using Android.Content;
 using Com.Yellowmessenger.Ymchat;
 using Com.Yellowmessenger.Ymchat.Models;
+using Java.Interop;
 
 namespace YmChat
 {
@@ -124,6 +125,33 @@ namespace YmChat
         public void setDisableActionsOnLoad(Boolean shouldDisableActionsOnLoad)
         {
             ymchat.Config.DisableActionsOnLoad = shouldDisableActionsOnLoad;
+        }
+
+        public void registerDevice(string apiKey, Action<bool> successCallback, Action<string> failureCallback)
+        {
+            YmChatEventListener eventListener = new YmChatEventListener();
+            eventListener.setIYellowCallback(
+                (success) => {
+                    successCallback(true);
+                },
+                (failureMessage) => {
+                    failureCallback(failureMessage);
+                });
+
+            ymchat.RegisterDevice(apiKey, ymchat.Config, eventListener);
+        }
+
+        public void getUnreadMessages(Action<String> successCallback, Action<string> failureCallback)
+        {
+            YmChatEventListener eventListener = new YmChatEventListener();
+            eventListener.setIYellowDataCallback(
+                (success) => {
+                    successCallback(success);
+                },
+                (failureMessage) => {
+                    failureCallback(failureMessage);
+                });
+            ymchat.GetUnreadMessagesCount(ymchat.Config, eventListener);
         }
     }
 }

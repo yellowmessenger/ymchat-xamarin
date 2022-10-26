@@ -126,6 +126,26 @@ namespace YmChat
         {
             YMChat.Shared.Config.DisableActionsOnLoad = shouldDisableActionsOnLoad;
         }
+
+        public void registerDevice(string apiKey, Action<bool> successCallback, Action<string> failureCallback)
+        {
+                YMChat.Shared.RegisterDeviceWithApiKey(apiKey, YMChat.Shared.Config, () => {
+                    successCallback(true);
+                }, (failureMessage) => {
+                    failureCallback(failureMessage.ToString());
+                });
+        }
+
+        public void getUnreadMessages(Action<String> successCallback, Action<string> failureCallback)
+        {
+            YMChat.Shared.GetUnreadMessagesCountWithYmConfig(YMChat.Shared.Config,
+                (success) => {
+                    successCallback(success);
+                },
+                (failure) => {
+                    failureCallback(failure);
+                });
+        }
     }
 
     public static class UIColorExtensions
