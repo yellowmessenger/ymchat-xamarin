@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Android.App;
@@ -152,6 +152,11 @@ namespace YmChat
                     failureCallback(failureMessage);
                 });
             ymchat.GetUnreadMessagesCount(ymchat.Config, eventListener);
+        }
+
+        public void useLiteVersion(bool shouldUseLiteVersion)
+        {
+            ymchat.Config.UseLiteVersion = shouldUseLiteVersion;
         }
     }
 }

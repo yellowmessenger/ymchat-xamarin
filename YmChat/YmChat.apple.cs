@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Foundation;
 using Binding;
@@ -76,23 +76,23 @@ namespace YmChat
         public void onEventFromBot(Action<Dictionary<string, object>> callback)
         {
             eventListener.setEventCallback(
-                (eventBot) =>
-                {
-                    Dictionary<String, Object> myEvent = new Dictionary<String, Object>();
-                    myEvent.Add("code", eventBot.Code);
-                    myEvent.Add("data", eventBot.Data);
-                    callback(myEvent);
-                });
+            (eventBot) =>
+            {
+                Dictionary<String, Object> myEvent = new Dictionary<String, Object>();
+                myEvent.Add("code", eventBot.Code);
+                myEvent.Add("data", eventBot.Data);
+                callback(myEvent);
+            });
             YMChat.Shared.Delegate = eventListener;
         }
 
         public void onBotClose(Action callback)
         {
             eventListener.setCloseBotEventCallBack(
-                () =>
-                {
-                    callback();
-                });
+            () =>
+            {
+                callback();
+            });
             YMChat.Shared.Delegate = eventListener;
         }
 
@@ -145,6 +145,11 @@ namespace YmChat
                 (failure) => {
                     failureCallback(failure);
                 });
+        }
+
+        public void useLiteVersion(bool shouldUseLiteVersion)
+        {
+            YMChat.Shared.Config.UseLiteVersion = shouldUseLiteVersion;
         }
     }
 
