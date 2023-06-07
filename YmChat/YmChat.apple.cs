@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Foundation;
 using Binding;
@@ -76,23 +76,23 @@ namespace YmChat
         public void onEventFromBot(Action<Dictionary<string, object>> callback)
         {
             eventListener.setEventCallback(
-                (eventBot) =>
-                {
-                    Dictionary<String, Object> myEvent = new Dictionary<String, Object>();
-                    myEvent.Add("code", eventBot.Code);
-                    myEvent.Add("data", eventBot.Data);
-                    callback(myEvent);
-                });
+            (eventBot) =>
+            {
+                Dictionary<String, Object> myEvent = new Dictionary<String, Object>();
+                myEvent.Add("code", eventBot.Code);
+                myEvent.Add("data", eventBot.Data);
+                callback(myEvent);
+            });
             YMChat.Shared.Delegate = eventListener;
         }
 
         public void onBotClose(Action callback)
         {
             eventListener.setCloseBotEventCallBack(
-                () =>
-                {
-                    callback();
-                });
+            () =>
+            {
+                callback();
+            });
             YMChat.Shared.Delegate = eventListener;
         }
 
@@ -125,6 +125,26 @@ namespace YmChat
         public void setDisableActionsOnLoad(Boolean shouldDisableActionsOnLoad)
         {
             YMChat.Shared.Config.DisableActionsOnLoad = shouldDisableActionsOnLoad;
+        }
+
+        public void registerDevice(string apiKey, Action<bool> successCallback, Action<string> failureCallback)
+        {
+                YMChat.Shared.RegisterDeviceWithApiKey(apiKey, YMChat.Shared.Config, () => {
+                    successCallback(true);
+                }, (failureMessage) => {
+                    failureCallback(failureMessage.ToString());
+                });
+        }
+
+        public void getUnreadMessages(Action<String> successCallback, Action<string> failureCallback)
+        {
+            YMChat.Shared.GetUnreadMessagesCountWithYmConfig(YMChat.Shared.Config,
+                (success) => {
+                    successCallback(success);
+                },
+                (failure) => {
+                    failureCallback(failure);
+                });
         }
 
         public void useLiteVersion(bool shouldUseLiteVersion)

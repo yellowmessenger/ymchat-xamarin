@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace YmChat
@@ -22,6 +22,8 @@ namespace YmChat
         void setStatusBarColor(string statusBarColor);
         void setCloseButtonColor(string closeButtonColor);
         void setDisableActionsOnLoad(Boolean shouldDisableActionsOnLoad);
+        void registerDevice(String apiKey, Action<bool> successCallback, Action<string> failureCallback);
+        void getUnreadMessages(Action<String> successCallback, Action<String> failureCallback);
         void useLiteVersion(Boolean shouldUseLiteVersion);
     }
 }
