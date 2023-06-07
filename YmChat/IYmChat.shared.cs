@@ -25,5 +25,6 @@ namespace YmChat
         void registerDevice(String apiKey, Action<bool> successCallback, Action<string> failureCallback);
         void getUnreadMessages(Action<String> successCallback, Action<String> failureCallback);
         void useLiteVersion(Boolean shouldUseLiteVersion);
+        void reloadBot();
     }
 }
