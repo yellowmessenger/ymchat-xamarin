@@ -154,7 +154,8 @@ namespace YmChat
 
         public void reloadBot()
         {
-            YMChat.Shared.reloadBot();
+            NSError error = new NSError();
+            YMChat.Shared.ReloadBotAndReturnError(out error);
         }
     }
 

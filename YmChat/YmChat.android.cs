@@ -162,7 +162,7 @@ namespace YmChat
 
         public void reloadBot()
         {
-            ymchat.reloadBot();
+            ymchat.ReloadBot();
         }
     }
 }
