@@ -31,8 +31,8 @@
 
 		<!--TODO: Fill these in-->
 		<PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>
-		<PackageProjectUrl>https://github.com/PurushYM/ymchat-xamarin</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/PurushYM/ymchat-xamarin</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/yellowmessenger/ymchat-xamarin</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/yellowmessenger/ymchat-xamarin</RepositoryUrl>
 		<PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
 		<PackageIconUrl>https://yellow.ai/images/Logo.svg</PackageIconUrl>
 		<PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, YmChat</PackageTags>
@@ -43,7 +43,7 @@
 
 
 		<Owners>Yellow.ai</Owners>
-		<Authors>Purushottam</Authors>
+		<Authors>Sankalp Gupta</Authors>
 
 		<!--When built in 2019 will remove extra references on pack-->
 		<DisableExtraReferences>true</DisableExtraReferences>

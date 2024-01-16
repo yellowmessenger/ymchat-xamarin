@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>YmChat</id>
-    <version>2.2.0</version>
+    <version>2.4.0</version>
     <title>The YmChat Plugin for Xamarin</title>
-    <authors>Purushottam</authors>
+    <authors>Sankalp Gupta</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/yellowmessenger/ymchat-xamarin</projectUrl>
     <description>The Nuget Package for integrating yellow.ai chat bot into xamarin forms application</description>
-    <releaseNotes>Added getUnreadMessagesCount() api to get unread messages count when bot is closed, Added registerDevice() api to register device for push notification without launching the bot </releaseNotes>
+    <releaseNotes>Added reloadBot() api to reload the bot with same configs you have started it. This will reload the bot without closing and reopening it. </releaseNotes>
     <tags>xamarin, ios, android, xamarin.forms, plugin, YmChat, ymchat</tags>
     <repository type="git" url="https://github.com/yellowmessenger/ymchat-xamarin" />
     <icon>images/ymicon.png</icon>

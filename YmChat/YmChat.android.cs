@@ -100,7 +100,7 @@ namespace YmChat
                 failureCallback(failureMessage);
             });
 
-            ymchat.UnlinkDeviceToken(botId, apiKey, deviceToken, unLinkDeviceTokenCallback);
+            ymchat.UnlinkDeviceToken(apiKey, ymchat.Config, unLinkDeviceTokenCallback);
         }
 
         public void setVersion(int version)
