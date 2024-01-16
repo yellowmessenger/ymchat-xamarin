@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>YmChat</id>
-    <version>2.4.0</version>
+    <version>2.4.1</version>
     <title>The YmChat Plugin for Xamarin</title>
     <authors>Sankalp Gupta</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
