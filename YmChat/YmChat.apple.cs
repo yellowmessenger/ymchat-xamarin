@@ -151,6 +151,12 @@ namespace YmChat
         {
             YMChat.Shared.Config.UseLiteVersion = shouldUseLiteVersion;
         }
+
+        public void reloadBot()
+        {
+            NSError error = new NSError();
+            YMChat.Shared.ReloadBotAndReturnError(out error);
+        }
     }
 
     public static class UIColorExtensions

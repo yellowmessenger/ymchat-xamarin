@@ -100,7 +100,7 @@ namespace YmChat
                 failureCallback(failureMessage);
             });
 
-            ymchat.UnlinkDeviceToken(botId, apiKey, deviceToken, unLinkDeviceTokenCallback);
+            ymchat.UnlinkDeviceToken(apiKey, ymchat.Config, unLinkDeviceTokenCallback);
         }
 
         public void setVersion(int version)
@@ -122,6 +122,7 @@ namespace YmChat
         {
             ymchat.Config.CloseButtonColorFromHex = closeButtonColor;
         }
+
         public void setDisableActionsOnLoad(Boolean shouldDisableActionsOnLoad)
         {
             ymchat.Config.DisableActionsOnLoad = shouldDisableActionsOnLoad;
@@ -157,6 +158,11 @@ namespace YmChat
         public void useLiteVersion(bool shouldUseLiteVersion)
         {
             ymchat.Config.UseLiteVersion = shouldUseLiteVersion;
+        }
+
+        public void reloadBot()
+        {
+            ymchat.ReloadBot();
         }
     }
 }
